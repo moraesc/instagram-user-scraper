@@ -23,6 +23,13 @@ Users can enter a name for the excel file.
 
 ### Usage
 1. Clone the directory to a location of your choice
-2. Open terminal and cd to the root directory of the app (e.g. `cd Desktop/instagram-scraper`)
+
+  `git clone https://github.com/moraesc/instagram-user-scraper.git`
+
+2. Cd to the root directory of the app
+
+  `cd Desktop/instagram-scraper`
+  
 3. Run `python3 insta-scraper.py` and follow command line instructions
-4. View .xlsx file in root directory 
+
+5. View .xlsx file in project root directory 
