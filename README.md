@@ -2,34 +2,42 @@
 
 ### Prerequisites
 - Python3 (https://www.python.org/downloads/)
+- Pip3
+  - Once python is installed run the following command in your terminal:
+    `python -m ensurepip`
 
 ### Overview
-This script allows users to enter a list of instagram usernames and outputs 
-their # of followers, # of followees, and # of posts in an excel file. 
-
-Input: 
-- The list of usernames inputted must be comma separated (e.g. billeelish, justinbieber, mileycyrus)
-- Whether there are spaces between commas or not does not matter 
-  (e.g. billieelish,justinbieber and billieelish, justinbieber are both valid)
-
-Output:
-The following stats will be outputted into an excel file stored in the root directory of this project:
-- Username
-- Followers
-- Folowees
-- Number of Posts
+This script takes in an Excel file with a list of Instgram user names and links to their accounts, scrapes their account data, and outputs an Excel file with a list of each users number of followers, number of followees, and number of posts. 
 
 Users can enter a name for the excel file.
 
 ### Usage
-1. Clone the directory to a location of your choice
+1. Clone the directory to a location of your choice. Run the following command in your terminal:
 
   `git clone https://github.com/moraesc/instagram-user-scraper.git`
-
-2. Cd to the root directory of the app
+  
+2. Cd to the root directory of the app. Run the following command in your terminal:
 
   `cd Desktop/instagram-scraper`
   
-3. Run `python3 insta-scraper.py` and follow command line instructions
+3. Install dependencies. Run the following command in your terminal:
 
-5. View .xlsx file in project root directory 
+  `pip3 install -r requirements.txt`
+  
+4. Drag an Excel file with the list of names and links to users instagram accounts into the directory
+
+  The Excel file should have all users names in the first column and all links in the second column. Both columns should have a header (wording of the header does not matter)
+  
+  Download a sample file here:
+  
+  [SampleFile.xlsx](https://github.com/moraesc/instagram-user-scraper/files/10333890/SampleFile.xlsx)
+
+  
+5. Run `python3 insta-scraper.py` and follow the command line instructions
+
+6. The following stats will be outputted into a .xlsx file stored in the projects root directory:
+  - Username
+  - Followers
+  - Folowees
+  - Number of Posts
+
