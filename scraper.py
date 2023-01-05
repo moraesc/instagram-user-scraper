@@ -53,3 +53,5 @@ file_name = input('Enter a file name for the Excel file that will contain your s
 sheet_name = input('Enter a name for the Excel sheet: ')
 
 data.to_excel(f'{file_name}.xlsx', sheet_name=sheet_name)
+
+input('The .xlsx file has been created and saved in the projects root directory.')
